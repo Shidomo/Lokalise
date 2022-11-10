@@ -1,5 +1,5 @@
 .btn {
-    width: 35%;
+    width: 45%;
     text-align: center;
 }
 
@@ -19,6 +19,6 @@
 }
 
 .btn-main {
-    width: 25%;
-    padding: 15px 0;
+    line-height: 45px;
+
 }

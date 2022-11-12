@@ -1,0 +1,41 @@
+@import './mixins';
+@import './normalize';
+@import './fonts';
+@import './base';
+@import './buttons';
+@import './header';
+
+
+.title {
+    padding: 120px 0 0 0;
+
+
+    &__image {
+        text-align: center;
+        display: flex;
+    }
+}
+
+.title-wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    & .main-heading {
+        display: flex;
+        flex-direction: column;
+        max-width: 560px;
+        align-items: flex-start;
+    }
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 36px;
+    margin: 15px 0 15px 0;
+}
+
+.features {
+    margin-top: 15px;
+}
+

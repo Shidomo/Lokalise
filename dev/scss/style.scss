@@ -7,7 +7,7 @@
 
 
 .title {
-    padding: 120px 0 0 0;
+    padding: 120px 0 120px 0;
 
 
     &__image {
@@ -26,16 +26,49 @@
         flex-direction: column;
         max-width: 560px;
         align-items: flex-start;
+
+        p {
+            font-size: 26px;
+        }
     }
 }
 
 h1 {
     font-weight: 600;
-    font-size: 36px;
+    font-size: 65px;
     margin: 15px 0 15px 0;
 }
 
 .features {
     margin-top: 15px;
+    font-size: 16px;
+    line-height: 18px;
+
 }
 
+
+.subtitle {
+    background:#FF9C7D;
+    text-align: center;
+
+    &-wrapp {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 80px 0 80px;
+        
+        h2 {
+            padding: 0 0 60px;
+            font-size: 50px;
+            width: 50%;
+            margin: auto;
+        }
+        
+        .brand {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+        }
+    }
+}

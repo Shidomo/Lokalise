@@ -170,3 +170,93 @@ h3 {
         width: 20%;
     }
 }
+
+.managment{
+    background: #DABC98;
+    }
+
+.managment-wrapp {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 0;
+
+    &-block {
+        display: flex;
+        align-items: center;
+        margin: 0 -40px;
+        a{
+            padding: 0 40px;
+        }
+        &_more {
+            margin: 0 -40px;
+            border-left: 1px solid black;
+            display: flex;
+            align-items: center;
+
+            a {
+                padding: 0 40px;
+            }
+        }
+    }
+}
+
+.integrate {
+    font-size: 25px;
+    padding: 120px 0;
+
+    h2 {
+        font-size: 65px;
+    }
+    &-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    &-title {
+        width: 70%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    a {
+        margin: 10px 0;
+    }
+
+}
+.try-it{
+    font-size: 20px;
+    padding: 120px 0;
+    background: #FF9C7D;
+    h2 {
+        font-size: 65px;
+    }
+    .try-block {
+        width: 100%;
+    }
+}
+
+ .footer-wrapp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 90px 0;
+
+    .case-studies {
+        text-align: start;
+        width: 23%;
+        font-size: 20px;
+
+        a{
+            padding: 20px 0;
+        }
+    }
+    &-list {
+        padding: 20px 0;
+        align-items: flex-start;
+        font-size: 15px;
+        li {
+            padding: 10px 0;
+        }
+    }
+ }

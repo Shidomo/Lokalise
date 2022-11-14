@@ -260,3 +260,29 @@ h3 {
         }
     }
  }
+
+ .footer-lokalise {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid black;
+
+    .footer-logo {
+        display: flex;
+        width: 100%;
+        padding-right: 40px;
+        align-items: center;
+
+        span {
+            width: 30%;
+        }
+    }
+
+    .footer-reserved {
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+        align-items: flex-start;
+    }
+ }

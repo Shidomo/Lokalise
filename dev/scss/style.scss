@@ -99,6 +99,7 @@ h3 {
         display: flex;
         flex-direction: column;
         justify-content: center; 
+        align-items: flex-start;
 
         p{
             a {
@@ -127,7 +128,7 @@ h3 {
         display: flex;
         flex-wrap: wrap;
         padding: 40px 0 0;
-        align-items: flex-end;
+        align-items: center;
         margin: 0 -60px;
     }
 
@@ -143,6 +144,10 @@ h3 {
     background: #fff;
     &--frames {
         text-align: left;
+    }
+    
+    &--frame {
+        align-items: flex-start;
     }
 }
 
@@ -165,6 +170,7 @@ h3 {
         flex-direction: column;
         padding-bottom: 40px;
         width: 60%;
+        align-items: flex-start;
     }
     &-img {
         width: 20%;
@@ -243,12 +249,14 @@ h3 {
     padding: 90px 0;
 
     .case-studies {
-        text-align: start;
         width: 23%;
         font-size: 20px;
+        display: flex;
+        align-items: flex-start;
 
         a{
             padding: 20px 0;
+            font-weight: 600;
         }
     }
     &-list {
@@ -257,6 +265,9 @@ h3 {
         font-size: 15px;
         li {
             padding: 10px 0;
+        }
+        a {
+            font-weight: normal;
         }
     }
  }

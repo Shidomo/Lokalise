@@ -1,5 +1,8 @@
 body {
     color: #000;
+    font-family: Graphik LCG, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal; 
 }
 
 #wrapper {
@@ -23,6 +26,7 @@ a {
     text-decoration: none;
     color: black;
     display: inline-block;
+    font-weight: 600;
 }
 
 .column {

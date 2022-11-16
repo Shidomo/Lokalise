@@ -7,41 +7,70 @@
 
 
 .title {
-    padding: 120px 0 120px 0;
+    padding: 20px;
+    text-align: center;
+    @media (min-width:1024px){
+        padding: 120px 0 120px 0;
+        text-align: start;
 
-
-    &__image {
-        text-align: center;
-        display: flex;
+        &__image {
+            text-align: center;
+            display: flex;
+        }
     }
 }
 
 .title-wrapp {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    & .main-heading {
+    flex-direction: column-reverse;
+    @media (min-width:1024px) {
+        
         display: flex;
-        flex-direction: column;
-        max-width: 560px;
-        align-items: flex-start;
-
-        p {
-            font-size: 26px;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        
+        & .main-heading {
+            display: flex;
+            flex-direction: column;
+            max-width: 560px;
+            align-items: flex-start;
+    
+            p {
+                font-size: 26px;
+            }
         }
     }
 }
 
 h1 {
-    font-weight: 600;
-    font-size: 65px;
     margin: 15px 0 15px 0;
+    font-weight: 600;
+    font-size: 30px;
+    @media (min-width:1024px){
+        font-size: 65px;
+    }
+}
+
+p {
+    font-size: 13px;
+
+    @media (min-width:768px){
+        font-size: 15px;
+
+    }
+    @media (min-width:1024px){
+        font-size: 20px;
+    }
+    
 }
 
 h2 {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 25px;
+    @media (min-width:1024px){
+        font-size: 50px;
+        line-height: 60px;
+    }
 }
 
 h3 {
@@ -50,9 +79,14 @@ h3 {
 }
 
 .features {
-    margin-top: 15px;
-    font-size: 16px;
-    line-height: 18px;
+    display: block;
+    padding-top: 15px;
+    font-size: 12px;
+    opacity: 0.7;
+    @media (min-width:1024px) {    
+        font-size: 16px;
+        line-height: 18px;        
+    }
 
 }
 
@@ -63,23 +97,69 @@ h3 {
 
     &-wrapp {
         display: flex;
-        justify-content: center;
         flex-direction: column;
-        padding: 80px 0 80px;
-        
+        justify-content: center;
+        padding: 40px 0 40px;
+
         h2 {
-            padding: 0 0 60px;
-            width: 50%;
+            padding: 0 0 20px;
+            width: 100%;
             margin: auto;
         }
-        
+
         .brand {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
             padding: 0;
+
+            li {
+                width: 100%;
+                padding: 20px;
+            }
         }
     }
+
+    @media (min-width:768px) {
+
+        .brand {
+            padding: 0;
+
+            li {
+                width: calc(100% / 3 - 4px);
+                padding: 20px;
+            }
+        }
+    }
+
+
+
+    @media (min-width:1024px) {
+        
+        &-wrapp { 
+            padding: 80px 0 80px;
+            
+            h2 {
+                padding: 0 0 60px;
+                width: 50%;
+            }
+            
+            .brand {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0;
+
+                li {
+                    width: calc(100% / 5);
+                    padding: 0;
+                }
+            }
+        }
+    }
+ 
 }
 
 .reverse {
@@ -87,67 +167,104 @@ h3 {
 }
 
 .card {
-    width: 100%;
     display: flex;
-    padding-bottom: 150px;
-    padding-top: 150px;
-    justify-content: space-between;
-    font-size: 20px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 13px;
 
-    &--title {
-        width:40%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center; 
-        align-items: flex-start;
-
-        p{
-            a {
-                border-bottom: 1px solid black;
+    &--title{
+        width:100%;
+    }
+    &--img {
+        width: 100%;
+        padding: 20px 30px;
+    }
+    @media (min-width:1024px) {    
+        text-align: left;  
+        width: 100%;
+        padding-bottom: 150px;
+        padding-top: 150px;
+        justify-content: space-between;
+        flex-direction: row;
+        font-size: 20px;
+    
+        &--title {
+            width:40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: flex-start;
+    
+            p{
+                a {
+                    border-bottom: 1px solid black;
+                }
             }
         }
+    
+        &--img {
+            width: 40%;
+        }
+    
+        &--span {
+            line-height: 30px;
+            font-weight: 600;
+        }
     }
-
-    &--img {
-        width: 40%;
-    }
-
-    &--span {
-        line-height: 30px;
-        font-weight: 600;
+}
+.reverse {
+    @media (min-width:1024px) {
+        flex-direction: row-reverse;        
     }
 }
 
 .lokalise , .sub-lokalise {
     text-align: center;
     background: #FFF8E4;
-    padding: 120px 0;
+    padding: 40px 0;
     font-size: 20px;
+    @media (min-width:1024px) {
+        padding: 120px 0;
+    }
 
     &--frames {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 40px 0 0;
-        align-items: center;
+        display: block;
+        padding: 40px 0 0; 
         margin: 0 -60px;
+        @media (min-width:1024px){
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
     }
 
     &--frame {
         display: flex;
-        width: calc(100%/3);
         flex-direction: column;
         padding: 20px 60px;
+        @media (min-width:1024px){
+            width: calc(100%/3);
+        }
     }
 }
 
 .sub-lokalise {
     background: #fff;
     &--frames {
-        text-align: left;
+        text-align: center;
+        @media (min-width:1024px){
+            text-align: left;
+        }
     }
     
     &--frame {
-        align-items: flex-start;
+        align-items: center;
+        @media (min-width:1024px){
+            align-items: flex-start;
+        }
     }
 }
 
@@ -155,10 +272,16 @@ h3 {
     background: #C9E8F2;
     font-size: 30px;
     &-block {
-        display: flex;
-        justify-content: space-between;
+        display: flex;       
         align-items: center;
-        padding: 50px 0 100px;
+        flex-direction: column-reverse;
+        text-align: center;
+        @media (min-width:1024px){
+            padding: 50px 0 100px;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: left;
+        }
 
         span{
             font-size: 15px;
@@ -170,10 +293,21 @@ h3 {
         flex-direction: column;
         padding-bottom: 40px;
         width: 60%;
-        align-items: flex-start;
+        
+        @media (min-width:1024px){
+            align-items: flex-start;
+        }
     }
     &-img {
-        width: 20%;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        padding: 20px 0;
+        @media (min-width:1024px){
+            justify-content: flex-end;
+            width: 30%;
+            padding: 0;
+        }
     }
 }
 
@@ -185,22 +319,41 @@ h3 {
     display: flex;
     justify-content: space-between;
     padding: 90px 0;
+    flex-direction: column;
+    @media (min-width:1024px){
+        flex-direction: row;
+    }
 
     &-block {
         display: flex;
-        align-items: center;
-        margin: 0 -40px;
+        align-items: center;  
+        flex-direction: column;
+        text-align: center;
+        @media (min-width:1024px){
+            flex-direction: row;
+            margin: 0 -40px;
+        }
+
         a{
             padding: 0 40px;
         }
         &_more {
-            margin: 0 -40px;
-            border-left: 1px solid black;
+            border-top: 1px solid black ;
+            padding-top: 20px;
             display: flex;
             align-items: center;
+            justify-content: center;
+            margin: 0 -20px;
+            @media (min-width:1024px){
+                border-top:none;
+                flex-direction: row;
+                padding-top: 0;
+                border-left: 1px solid black;
+                justify-content: flex-end;
+            }
 
             a {
-                padding: 0 40px;
+                padding: 0 20px;
             }
         }
     }
@@ -211,7 +364,9 @@ h3 {
     padding: 120px 0;
 
     h2 {
-        font-size: 65px;
+        @media (min-width:1024px){
+            font-size: 65px;
+        }
     }
     &-block {
         display: flex;
@@ -231,11 +386,18 @@ h3 {
 
 }
 .try-it{
-    font-size: 20px;
-    padding: 120px 0;
+
+    padding: 40px 0;
     background: #FF9C7D;
+    @media (min-width:1024px){
+        padding: 120px 0;
+        font-size: 20px;
+    }
     h2 {
-        font-size: 65px;
+
+        @media (min-width:1024px){
+            font-size: 65px;
+        }
     }
     .try-block {
         width: 100%;

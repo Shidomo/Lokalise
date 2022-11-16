@@ -4,14 +4,18 @@ li {
 
 .btn {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 11px;
     line-height: 18px;
     text-align: center;
     display: inline-block;
     box-shadow: 0 0 1px rgb(0 0 0 / 0%);
     border: 1px solid orange;
     min-width: 120px;
-    padding: 15px 10px;
+    padding: 11px 10px;
+    @media (min-width:1024px) {
+        padding: 16px 10px;
+        font-size: 16px;
+    }
 
     &--orange {
         background: #FF6336;
@@ -34,11 +38,23 @@ li {
     align-items: center;
     text-align: center;
     justify-content: center;
+    flex-wrap: wrap;
+    @media (min-width:1024px) {
+        flex-wrap: nowrap;
+    }
 
     li {
         padding: 5px;
         text-align: center;
         align-self: center;
         align-items: center;
+    }
+}
+
+.header-btn {
+    display: none;
+    @media (min-width:1024px) {
+        display: flex;
+        align-self: flex-end;
     }
 }

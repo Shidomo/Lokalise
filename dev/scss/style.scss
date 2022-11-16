@@ -151,6 +151,15 @@
 
     &--title{
         width:100%;
+
+        p{
+            a {
+                border-bottom: 1px solid black;
+                &:hover {
+                    color: #FF6336;
+                } 
+            }
+        }
     }
     &--img {
         width: 100%;
@@ -177,15 +186,6 @@
             flex-direction: column;
             justify-content: center; 
             align-items: flex-start;
-    
-            p{
-                a {
-                    border-bottom: 1px solid black;
-                    &:hover {
-                        color: #FF6336;
-                    }
-                }
-            }
         }
     
         &--img {
@@ -217,23 +217,24 @@
         display: block;
         padding: 40px 0 0; 
         margin: 0 -60px;
+        p{
+            a {
+                border-bottom: 1px solid black;
+                &:hover {
+                    color: #FF6336;
+                }
+            }               
+        }
+        a {
+            &:hover {
+                color: #FF6336;
+            }
+        }
         @media (min-width:1024px){
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            p{
-                a {
-                    border-bottom: 1px solid black;
-                    &:hover {
-                        color: #FF6336;
-                    }
-                }               
-            }
-            a {
-                &:hover {
-                    color: #FF6336;
-                }
-            }
+           
         }
     }
 

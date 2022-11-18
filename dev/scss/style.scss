@@ -336,11 +336,11 @@
         text-align: center;
         @media (min-width:1024px){
             flex-direction: row;
-            margin: 0 -40px;
-        }
-
-        a{
-            padding: 0 40px;
+            margin: 0 -20px;
+            
+            a{
+                padding: 0 40px;
+            }
         }
         &_more {
             border-top: 1px solid black ;
